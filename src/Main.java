@@ -16,6 +16,9 @@ record User(int a){
     User(int a){
         this.a = a;
     }
+    User(int a,int b){
+        this(a);
+    }
    static int aa = 10;
 }
 
