@@ -8,7 +8,7 @@ public class Main {
             case B b -> 7;
             case A obj -> 2;
         };
-        System.out.println(value);
+        System.out.println(value++);
     }
 }
 
