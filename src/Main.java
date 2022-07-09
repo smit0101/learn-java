@@ -13,6 +13,12 @@ public class Main {
         System.out.println(value++);
 
         List.of(1,2,3,4,5,6,7,8,9).forEach(System.out::println);
+
+
+        Object smit = new User(9);
+        if(smit instanceof User user && user.a() > 8){
+            System.out.println("say");
+        }
     }
 }
 
