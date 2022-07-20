@@ -38,3 +38,27 @@ sealed class C extends B{}
 non-sealed class D extends C{}
 
 class E extends  D{}
+
+
+sealed class Plant permits  Mango{
+
+}
+sealed class Mango  extends  Plant permits Tulsi{
+
+}
+
+ final class Tulsi extends Mango{
+
+}
+//
+//class Test{
+//    public static void main(String[] args) {
+//        Plant p = new Mango();
+//        int a = switch (p){
+//            case null -> -10;
+//            case Tulsi t -> 9;
+//            case Mango m -> 90;
+//            case Plant pp -> 9;
+//        };
+//    }
+//}
